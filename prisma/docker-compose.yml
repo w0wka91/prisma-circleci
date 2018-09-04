@@ -9,7 +9,6 @@ services:
       PRISMA_CONFIG: |
         port: 4466
         enableManagementApi: true
-        managementApiSecret: my-secret
         databases:
           default:
             connector: postgres
