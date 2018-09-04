@@ -22,6 +22,7 @@ jobs:
             docker ps
             cd ..
             npm install
+            cd prisma
             npx prisma deploy
             sleep 20
             curl -I http://localhost:4466
