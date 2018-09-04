@@ -1,0 +1,11 @@
+{
+  "name": "prisma-circleci",
+  "version": "1.0.0",
+  "description": "Run a prisma server instance in circleci",
+  "main": "index.js",
+  "author": "Waldemar Penner",
+  "license": "MIT",
+  "devDependencies": {
+    "prisma": "^1.15.3"
+  }
+}
