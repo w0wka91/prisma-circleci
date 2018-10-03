@@ -1,9 +1,5 @@
 mutation {
-  createUser(
-    data: {
-      name: "Peter"
-    }
-  ) {
+  createUser(data: { name: "Example" }) {
     id
   }
 }
