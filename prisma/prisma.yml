@@ -1,4 +1,7 @@
 endpoint: http://localhost:4466/circleci
 datamodel: datamodel.graphql
+generate:
+  - generator: javascript-client
+    output: ../generated/prisma-client/
 seed:
   import: seed.graphql
