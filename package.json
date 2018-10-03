@@ -6,6 +6,6 @@
   "author": "Waldemar Penner",
   "license": "MIT",
   "devDependencies": {
-    "prisma": "^1.17"
+    "prisma": "^1.17.1"
   }
 }
