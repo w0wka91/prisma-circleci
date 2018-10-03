@@ -345,4 +345,8 @@ export type Int = number;
  * Type Defs
  */
 
-export const prisma: Prisma;
+export const Prisma = makePrismaClientClass<ClientConstructor<Prisma>>({
+  typeDefs,
+  endpoint: "http://localhost:4466/circleci/test"
+});
+export const prisma = new Prisma();
