@@ -15,3 +15,6 @@ jobs:
             docker-compose -f prisma/docker-compose.yml up -d
             sleep 20
             docker ps
+      - run:
+          name: Deploy datamodel
+          command: npx prisma deploy
