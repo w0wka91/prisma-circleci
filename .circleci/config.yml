@@ -2,6 +2,7 @@ version: 2
 jobs:
   build:
     machine: true
+    image: node/10-jessie
     working_directory: ~/repo
     steps:
       - checkout
