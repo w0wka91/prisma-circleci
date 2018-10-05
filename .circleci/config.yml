@@ -2,7 +2,7 @@ version: 2
 jobs:
   build:
     docker:
-      - image: circleci/<language>:<version TAG>
+      - image: circleci/node:10.10.0-jessie
     steps:
       - run:
           name: Install dependencies
