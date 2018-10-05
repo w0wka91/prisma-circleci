@@ -9,8 +9,8 @@ jobs:
       - run:
           name: Start Prisma Server
           command: |
-            curl -sL https://deb.nodesource.com/setup_8.x | sudo -E bash -
-            sudo apt-get install -y nodejs
+            curl -sL https://deb.nodesource.com/setup_8.x | sudo -E bash - > /dev/null
+            sudo apt-get install -y nodejs > /dev/null
             sudo ln -s "$(which nodejs)" /usr/bin/node
             node -v
             cd prisma
