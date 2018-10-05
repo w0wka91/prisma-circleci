@@ -13,8 +13,9 @@ jobs:
           name: Start prisma server
           command: |
             docker-compose -f prisma/docker-compose.yml up -d
-            sleep 20
+            sleep 30
             docker ps
+            curl -I http://localhost:4466
       - run:
           name: Deploy datamodel
           command: cd prisma && npx prisma deploy
