@@ -11,7 +11,7 @@ jobs:
           command: |
             curl -sL https://deb.nodesource.com/setup_8.x | sudo -E bash - > /dev/null
             sudo apt-get install -y nodejs > /dev/null
-            sudo update-alternatives --force --all --install /usr/bin/node node /usr/bin/nodejs 10
+            sudo update-alternatives --force --all /usr/bin/node node /usr/bin/nodejs 10
             node -v
             cd prisma
             docker-compose up -d
