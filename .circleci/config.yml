@@ -17,4 +17,4 @@ jobs:
             docker ps
       - run:
           name: Deploy datamodel
-          command: npx prisma deploy
+          command: cd prisma && npx prisma deploy
