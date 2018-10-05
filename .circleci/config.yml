@@ -12,9 +12,6 @@ jobs:
       - run:
           name: Start prisma server
           command: |
-            ls -la
-            docker info
-            dockerd
             docker-compose -f prisma/docker-compose.yml up -d
             sleep 20
             docker ps
