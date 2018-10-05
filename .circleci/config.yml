@@ -8,6 +8,7 @@ jobs:
       - run:
           name: Install dependencies
           command: npm install
+      - setup_remote_docker
       - run:
           name: Start prisma server
           command: |
