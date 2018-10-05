@@ -9,6 +9,7 @@ jobs:
       - run:
           name: Start Prisma Server
           command: |
+            sudo apt-get install nodejs
             sudo update-alternatives --install /usr/bin/node node /usr/bin/nodejs 10
             node -v
             cd prisma
